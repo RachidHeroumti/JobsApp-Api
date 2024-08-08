@@ -7,12 +7,14 @@
 <body>
     <h1>Job Listings</h1>
     
+   
+    
     @foreach ($listes as $job)
         <h2>{{ $job['title'] }}</h2>
         <ul>
-            @foreach ($job['company'] as $task)
-                <li>{{ $task }}</li>
-            @endforeach
+            
+                <li>{{ $job['company']  }}</li>
+            
         </ul>
     @endforeach
 </body>
